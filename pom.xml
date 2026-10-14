@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>${project.name}</name>
+    <artifactId>app-__APPNAME__</artifactId>
+    <groupId>org.folio</groupId>
+    <description>__APP_DESCRIPTION__</description>
+    <version>1.0.0</version>
+
+    <properties>
+        <project.name>app-__APPNAME__</project.name>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <folio-application-generator.version>1.4.0</folio-application-generator.version>
+        <templatePath>${basedir}/application.template.json</templatePath>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.folio</groupId>
+                <artifactId>folio-application-generator</artifactId>
+                <version>${folio-application-generator.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generateFromJson</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <templatePath>${templatePath}</templatePath>
+                    <moduleRegistries>
+                        <registry>
+                            <type>okapi</type>
+                            <url>https://folio-registry.dev.folio.org</url>
+                        </registry>
+                    </moduleRegistries>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>folio-nexus</id>
+            <name>FOLIO Maven repository</name>
+            <url>https://repository.folio.org/repository/maven-folio</url>
+        </repository>
+
+        <repository>
+            <id>index-data-nexus</id>
+            <name>FOLIO Maven repository</name>
+            <url>https://maven.indexdata.com</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>folio-nexus</id>
+            <name>FOLIO Release Repository</name>
+            <url>https://repository.folio.org/repository/maven-releases/</url>
+            <uniqueVersion>false</uniqueVersion>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>folio-nexus</id>
+            <name>FOLIO Snapshot Repository</name>
+            <uniqueVersion>true</uniqueVersion>
+            <url>https://repository.folio.org/repository/maven-snapshots/</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>folio-nexus</id>
+            <name>FOLIO Maven repository</name>
+            <url>https://repository.folio.org/repository/maven-folio</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <scm>
+        <url>https://github.com/folio-org/${project.name}</url>
+        <connection>scm:git:git://github.com:folio-org/${project.name}.git</connection>
+        <developerConnection>scm:git:git@github.com:folio-org/${project.name}.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+</project>

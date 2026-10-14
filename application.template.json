@@ -1,0 +1,26 @@
+{
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "dependencies": [
+    {
+      "name": "__DEPENDENCY_APP_NAME__",
+      "version": "__^SEMVER__",
+      "preRelease": "false"
+    }
+  ],
+  "modules": [
+    {
+      "name": "__MODULE_NAME__",
+      "version": "__^SEMVER__",
+      "preRelease": "false"
+    }
+  ],
+  "uiModules": [
+    {
+      "name": "__UI_MODULE_NAME__",
+      "version": "__^SEMVER__",
+      "preRelease": "false"
+    }
+  ]
+}
