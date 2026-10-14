@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>${project.name}</name>
-    <artifactId>app-__APPNAME__</artifactId>
+    <artifactId>app-eureka-infrastructure</artifactId>
     <groupId>org.folio</groupId>
-    <description>__APP_DESCRIPTION__</description>
+    <description>Virtual application descriptor declaring Eureka infrastructure dependencies</description>
     <version>1.0.0</version>
 
     <properties>
-        <project.name>app-__APPNAME__</project.name>
+        <project.name>app-eureka-infrastructure</project.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <folio-application-generator.version>1.4.0</folio-application-generator.version>
+        <folio-application-generator.version>1.5.0-SNAPSHOT</folio-application-generator.version>
         <templatePath>${basedir}/application.template.json</templatePath>
     </properties>
 

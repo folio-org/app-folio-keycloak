@@ -4,23 +4,19 @@
   "description": "${project.description}",
   "dependencies": [
     {
-      "name": "__DEPENDENCY_APP_NAME__",
-      "version": "__^SEMVER__",
-      "preRelease": "false"
-    }
-  ],
-  "modules": [
+      "name": "postgres",
+      "version": ">=16.0",
+      "optional": false
+    },
     {
-      "name": "__MODULE_NAME__",
-      "version": "__^SEMVER__",
-      "preRelease": "false"
-    }
-  ],
-  "uiModules": [
+      "name": "kafka",
+      "version": ">=3.5.1",
+      "optional": false
+    },
     {
-      "name": "__UI_MODULE_NAME__",
-      "version": "__^SEMVER__",
-      "preRelease": "false"
+      "name": "opensearch",
+      "version": ">=2.19.0",
+      "optional": false
     }
   ]
 }

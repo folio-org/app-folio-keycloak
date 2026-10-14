@@ -6,7 +6,7 @@ update_config:
   pr_reviewers:
     - folio-org/kitfox
     - folio-org/fse-platform
-    - folio-org/__TEAM_NAME__
+    - folio-org/eureka
 
   ruleset:
     enabled: true
