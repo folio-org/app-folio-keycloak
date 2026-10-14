@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>${project.name}</name>
-    <artifactId>app-eureka-infrastructure</artifactId>
+    <artifactId>app-folio-keycloak</artifactId>
     <groupId>org.folio</groupId>
-    <description>Virtual application descriptor declaring Eureka infrastructure dependencies</description>
+    <description>Application descriptor for the FOLIO Keycloak application</description>
     <version>1.0.0</version>
 
     <properties>
-        <project.name>app-eureka-infrastructure</project.name>
+        <project.name>app-folio-keycloak</project.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <folio-application-generator.version>1.5.0-SNAPSHOT</folio-application-generator.version>
         <templatePath>${basedir}/application.template.json</templatePath>
