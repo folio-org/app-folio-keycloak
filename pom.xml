@@ -7,7 +7,7 @@
     <artifactId>app-folio-keycloak</artifactId>
     <groupId>org.folio</groupId>
     <description>Application descriptor for the FOLIO Keycloak application</description>
-    <version>1.0.0</version>
+    <version>26.7.1</version>
 
     <properties>
         <project.name>app-folio-keycloak</project.name>
