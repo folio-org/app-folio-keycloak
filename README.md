@@ -57,7 +57,7 @@ Application teams add the virtual application to the `dependencies` array of the
 ```
 
 `optional` is written to the descriptor only when present in the template and requires `folio-application-generator`
-`1.5.0-SNAPSHOT` or later. Consumer descriptors are not changed by this repository.
+`1.5.0-SNAPSHOT` or later.
 
 ### Platform descriptor overlap
 
