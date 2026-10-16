@@ -1,0 +1,8 @@
+{
+  "id" : "app-folio-keycloak-26.7.1",
+  "name" : "app-folio-keycloak",
+  "version" : "26.7.1",
+  "description" : "Application descriptor for the FOLIO Keycloak application",
+  "scope" : "platform",
+  "dependencies" : [ ]
+}
